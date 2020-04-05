@@ -13,9 +13,9 @@
     <div class="container">
       @guest
       @else
-      @include('inc.messages')
       <div class="row">
         <div class="col-lg-8">
+          @include('inc.messages')
           <form action="{{ route('categories-form') }}" method="post">
             @csrf
             <div class="form-group">
